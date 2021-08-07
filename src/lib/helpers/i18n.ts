@@ -85,5 +85,5 @@ export function getI18n () {
     }
   }
 
-  return I18N[language]
+  return I18N[language] || I18N['en']
 }
