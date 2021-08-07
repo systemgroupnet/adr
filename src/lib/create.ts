@@ -26,7 +26,7 @@ function createDecisions (name: string, savePath: string | any | void) {
     .replace(/{TITLE}/g, name)
     .replace(/{DATE}/g, newDate)
 
-  let filePath = savePath + newIndex + '-' + fileName + '.md'
+  let filePath = savePath + newIndex + '-' + fileName + Config.getExtension()
   fs.writeFileSync(filePath, fileData)
 }
 

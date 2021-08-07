@@ -8,7 +8,8 @@ export function init (language): void {
     language: language,
     path: 'docs/adr/',
     prefix: '',
-    digits: 4
+    digits: 4,
+    extension: ".md"
   }
   if (language === 'zh-cn' || language === 'chinese') {
     defaultConfig.language = 'zh-cn'
